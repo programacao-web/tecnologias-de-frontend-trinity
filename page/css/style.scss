@@ -1,0 +1,39 @@
+body {
+  /* NOTHING TO DO YET */
+}
+
+/* Set Style for mobile devices */
+@media (max-width: 600px) {
+  .navbar {
+    background: white;
+    padding: 10px 10px 10px 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 25px;
+  }
+  .hero {
+    padding: 20px;
+    margin-top: 55px;
+    width: 100%;
+    text-align: center;
+  }
+  /* Hide depositions excepts first */
+  #section2 p:nth-child(n+3) {
+    display: none;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75);
+    width: 30%;
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.75);
+    }
+  }
+  .container {
+    text-align: center;
+  }
+  .cards-flex-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
